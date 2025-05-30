@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>login</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="login" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://febriarmn.github.io/login/" />
-<meta property="og:url" content="https://febriarmn.github.io/login/" />
-<meta property="og:site_name" content="login" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="login" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"login","name":"login","url":"https://febriarmn.github.io/login/"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/login/assets/css/style.css?v=90f24f55187754df1b5ff6b7e33875698c0c2904">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/login/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">   
-
-      <html>
+<html>
 <head>
   <title>Log In Rujak Petis</title>
   <script type="module">
