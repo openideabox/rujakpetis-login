@@ -73,8 +73,8 @@
       border-radius: 15px;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
       width: 100%;
-      max-width: 400px;
-      height: 470px;
+      max-width: 500px;
+      height: 600px;
       text-align: center;
       border: 2px solid rgba(255, 107, 53, 0.3);
       flex-shrink: 0;
