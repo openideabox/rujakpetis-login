@@ -124,6 +124,7 @@
       height: auto;
       margin-bottom: 1px;
       filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+      background: transparent;
     }
 
     .subtitle {
