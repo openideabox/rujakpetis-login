@@ -1,1 +1,183 @@
-# login
+<html>
+
+<head>
+  <title>Log In Rujak Petis</title>
+  <script type="module">
+    import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+    import {getAuth, signInWithEmailAndPassword} from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCsWmy6FfAS95BegKVNySaB397DP3z0Yc8", authDomain: "rujak-petis.firebaseapp.com",
+      projectId: "rujak-petis",
+      storageBucket: "rujak-petis.firebasestorage.app",
+      messagingSenderId: "554035507355",
+      appId: "1:554035507355:web:60b2335b4069915bb7d63e",
+      measurementId: "G-677TGTQW5R"
+    };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    window.login = function () {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          window.location.href = "https://sites.google.com/view/publikasinwas1705/home";
+        })
+        .catch((error) => {
+          document.getElementById("msg").innerText = "Login gagal: " + error.message;
+        });
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url(concentrated-colleagues-sitting-office-coworking.jpg) center/cover no-repeat;
+      background-attachment: fixed;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(30, 60, 114, 0.7);
+      z-index: -1;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1000px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 400px;
+      height: 470px;
+      text-align: center;
+      border: 2px solid rgba(255, 107, 53, 0.3);
+      flex-shrink: 0;
+    }
+
+    input,
+    button {
+      margin: 10px 0;
+      padding: 12px;
+      width: 100%;
+      border: 2px solid #ff6b35;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    input {
+      background: rgba(255, 255, 255, 0.9);
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #1e3c72;
+      box-shadow: 0 0 10px rgba(30, 60, 114, 0.3);
+    }
+
+    button {
+      background: linear-gradient(45deg, #1e3c72, #ff6b35);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    button:hover {
+      background: linear-gradient(45deg, #ff6b35, #1e3c72);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 1px;
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    }
+
+    .subtitle {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1e3c72;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px rgba(255, 107, 53, 0.3);
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      color: #1e3c72;
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(255, 107, 53, 0.3);
+    }
+
+    #msg {
+      color: #ff6b35;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .image-section {
+        order: -1;
+      }
+
+      .side-image {
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="container">
+      <img src="Rujak Petis 4.PNG" alt="Rujak Petis Logo" class="logo" />
+      <div class="subtitle">BPS Kabupaten Seluma</div>
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+      <p id="msg"></p>
+    </div>
+  </div>
+</body>
+
+</html>
