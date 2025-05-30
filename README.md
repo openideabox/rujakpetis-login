@@ -173,7 +173,7 @@ git push origin main
 <body>
   <div class="main-container">
     <div class="container">
-      <img src="Rujak Petis 4.PNG" alt="Rujak Petis Logo" class="logo" />
+      <img src="Rujak-Petis-4.PNG" alt="Rujak Petis Logo" class="logo" />
       <div class="subtitle">BPS Kabupaten Seluma</div>
       <input type="email" id="email" placeholder="Email" />
       <input type="password" id="password" placeholder="Password" />
