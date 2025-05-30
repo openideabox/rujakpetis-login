@@ -34,10 +34,7 @@
 
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="https://febriarmn.github.io/login/">login</a></h1>
-      
+    <div class="container-lg px-3 my-5 markdown-body">   
 
       <html>
 <head>
