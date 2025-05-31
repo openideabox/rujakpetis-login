@@ -192,21 +192,7 @@
       <div class="subtitle">BPS Kabupaten Seluma</div>
       <input type="email" id="email" placeholder="Email" />
       <input type="password" id="password" placeholder="Password" />
-       <span class="toggle-password" onclick="togglePassword()">👁️ Show</span>
-       <script>
-            function togglePassword() {
-            const passwordInput = document.getElementById('password');
-            const toggleText = document.querySelector('.toggle-password');
-            
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                toggleText.textContent = '👁️ Hide';
-            } else {
-                passwordInput.type = 'password';
-                toggleText.textContent = '👁️ Show';
-            }
-        }
-      <button onclick="login()">Login</button>
+       <button onclick="login()">Login</button>
       <p id="msg"></p>
     </div>
   </div>
