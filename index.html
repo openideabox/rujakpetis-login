@@ -196,6 +196,22 @@
       <p id="msg"></p>
     </div>
   </div>
+  <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah form submit default
+            
+            const loginButton = document.getElementById('loginButton');
+            loginButton.textContent = 'Please wait...';
+            loginButton.disabled = true;
+            
+              setTimeout(function() {
+                alert('Login process would happen here');
+                loginButton.textContent = 'Login';
+                loginButton.disabled = false;
+            }, 2000);
+        });
+    </script>
+  
 </body>
 
 </html>
