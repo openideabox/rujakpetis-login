@@ -22,7 +22,7 @@
 
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-          window.location.href = "https://sites.google.com/view/publikasinwas1705/home";
+          window.location.href = "https://sites.google.com/view/publikasinwas1705/beranda";
         })
         .catch((error) => {
           document.getElementById("msg").innerText = "Login gagal: " + error.message;
