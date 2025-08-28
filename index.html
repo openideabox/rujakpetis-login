@@ -22,7 +22,7 @@ const password = document.getElementById("password").value;
 
 signInWithEmailAndPassword(auth, email, password)
 .then((userCredential) => {
-window.location.href = "https://sites.google.com/view/rujak-petis1705/home";
+window.location.href = "https://sites.google.com/view/rujak-petis1705/beranda";
 })
 .catch((error) => {
 document.getElementById("msg").innerText = "Login gagal: " + error.message;
